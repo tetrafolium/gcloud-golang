@@ -26,7 +26,7 @@ import (
 	bttspb "github.com/tetrafolium/gcloud-golang/bigtable/internal/table_service_proto"
 	"github.com/tetrafolium/gcloud-golang/internal/transport"
 	"golang.org/x/net/context"
-	"google.golang.org/grpc"
+	"github.com/tetrafolium/grpc-go"
 )
 
 const adminAddr = "bigtabletableadmin.googleapis.com:443"

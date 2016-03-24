@@ -9,7 +9,7 @@ import (
 	"github.com/tetrafolium/gcloud-golang"
 	"github.com/tetrafolium/gcloud-golang/bigtable/bttest"
 	"golang.org/x/net/context"
-	"google.golang.org/grpc"
+	"github.com/tetrafolium/grpc-go"
 )
 
 func TestAdminIntegration(t *testing.T) {

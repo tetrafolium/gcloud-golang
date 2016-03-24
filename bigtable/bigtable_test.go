@@ -32,7 +32,7 @@ import (
 	"github.com/tetrafolium/gcloud-golang/bigtable/bttest"
 	btspb "github.com/tetrafolium/gcloud-golang/bigtable/internal/service_proto"
 	"golang.org/x/net/context"
-	"google.golang.org/grpc"
+	"github.com/tetrafolium/grpc-go"
 )
 
 func dataChunk(fam, col string, ts int64, data string) string {

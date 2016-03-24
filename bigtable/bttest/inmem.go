@@ -47,7 +47,7 @@ import (
 	bttdpb "github.com/tetrafolium/gcloud-golang/bigtable/internal/table_data_proto"
 	bttspb "github.com/tetrafolium/gcloud-golang/bigtable/internal/table_service_proto"
 	"golang.org/x/net/context"
-	"google.golang.org/grpc"
+	"github.com/tetrafolium/grpc-go"
 )
 
 // Server is an in-memory Cloud Bigtable fake.

@@ -24,9 +24,9 @@ import (
 	"github.com/tetrafolium/oauth2"
 	"github.com/tetrafolium/oauth2/google"
 	"golang.org/x/net/context"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/oauth"
+	"github.com/tetrafolium/grpc-go"
+	"github.com/tetrafolium/grpc-go/credentials"
+	"github.com/tetrafolium/grpc-go/credentials/oauth"
 )
 
 // ErrHTTP is returned when on a non-200 HTTP response.

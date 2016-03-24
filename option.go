@@ -19,7 +19,7 @@ import (
 
 	"github.com/tetrafolium/gcloud-golang/internal/opts"
 	"github.com/tetrafolium/oauth2"
-	"google.golang.org/grpc"
+	"github.com/tetrafolium/grpc-go"
 )
 
 // ClientOption is used when construct clients for each cloud service.

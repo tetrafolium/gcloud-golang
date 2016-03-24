@@ -9,7 +9,7 @@ import (
 	"net/http"
 
 	"github.com/tetrafolium/oauth2"
-	"google.golang.org/grpc"
+	"github.com/tetrafolium/grpc-go"
 )
 
 type DialOpt struct {
