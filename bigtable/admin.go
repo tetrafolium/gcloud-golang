@@ -21,11 +21,11 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/tetrafolium/gcloud-golang"
+	btcspb "github.com/tetrafolium/gcloud-golang/bigtable/internal/cluster_service_proto"
+	bttspb "github.com/tetrafolium/gcloud-golang/bigtable/internal/table_service_proto"
+	"github.com/tetrafolium/gcloud-golang/internal/transport"
 	"golang.org/x/net/context"
-	"google.golang.org/cloud"
-	btcspb "google.golang.org/cloud/bigtable/internal/cluster_service_proto"
-	bttspb "google.golang.org/cloud/bigtable/internal/table_service_proto"
-	"google.golang.org/cloud/internal/transport"
 	"google.golang.org/grpc"
 )
 

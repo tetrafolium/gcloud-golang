@@ -22,8 +22,8 @@ import (
 
 	"golang.org/x/net/context"
 
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/internal/testutil"
+	"github.com/tetrafolium/gcloud-golang"
+	"github.com/tetrafolium/gcloud-golang/internal/testutil"
 )
 
 // messageData is used to hold the contents of a message so that it can be compared againts the contents

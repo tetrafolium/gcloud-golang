@@ -27,7 +27,7 @@ To use a Server, create it, and then connect to it with no security:
 		cloud.WithBaseGRPC(conn))
 	...
 */
-package bttest // import "google.golang.org/cloud/bigtable/bttest"
+package bttest
 
 import (
 	"encoding/binary"
@@ -41,12 +41,12 @@ import (
 	"sync"
 	"time"
 
+	btdpb "github.com/tetrafolium/gcloud-golang/bigtable/internal/data_proto"
+	emptypb "github.com/tetrafolium/gcloud-golang/bigtable/internal/empty"
+	btspb "github.com/tetrafolium/gcloud-golang/bigtable/internal/service_proto"
+	bttdpb "github.com/tetrafolium/gcloud-golang/bigtable/internal/table_data_proto"
+	bttspb "github.com/tetrafolium/gcloud-golang/bigtable/internal/table_service_proto"
 	"golang.org/x/net/context"
-	btdpb "google.golang.org/cloud/bigtable/internal/data_proto"
-	emptypb "google.golang.org/cloud/bigtable/internal/empty"
-	btspb "google.golang.org/cloud/bigtable/internal/service_proto"
-	bttdpb "google.golang.org/cloud/bigtable/internal/table_data_proto"
-	bttspb "google.golang.org/cloud/bigtable/internal/table_service_proto"
 	"google.golang.org/grpc"
 )
 

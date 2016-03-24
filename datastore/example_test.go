@@ -19,10 +19,10 @@ import (
 	"log"
 	"time"
 
+	"github.com/tetrafolium/gcloud-golang"
+	"github.com/tetrafolium/gcloud-golang/datastore"
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2/google"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/datastore"
 )
 
 // TODO(djd): reevaluate this example given new Client config.

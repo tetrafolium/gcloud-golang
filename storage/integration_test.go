@@ -32,8 +32,8 @@ import (
 
 	"golang.org/x/net/context"
 
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/internal/testutil"
+	"github.com/tetrafolium/gcloud-golang"
+	"github.com/tetrafolium/gcloud-golang/internal/testutil"
 )
 
 // suffix is a timestamp-based suffix which is added, where possible, to all

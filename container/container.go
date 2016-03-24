@@ -16,16 +16,16 @@
 //
 // For more information about the API,
 // see https://cloud.google.com/container-engine/docs
-package container // import "google.golang.org/cloud/container"
+package container
 
 import (
 	"errors"
 	"net/http"
 	"time"
 
+	"github.com/tetrafolium/gcloud-golang/internal"
 	"golang.org/x/net/context"
 	raw "google.golang.org/api/container/v1"
-	"google.golang.org/cloud/internal"
 )
 
 type Type string

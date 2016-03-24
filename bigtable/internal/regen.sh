@@ -5,7 +5,7 @@
 # see https://github.com/golang/protobuf for instructions.
 # You also need Go and Git installed.
 
-PKG=google.golang.org/cloud/bigtable
+PKG=github.com/tetrafolium/gcloud-golang/bigtable
 UPSTREAM=https://github.com/GoogleCloudPlatform/cloud-bigtable-client
 UPSTREAM_SUBDIR=bigtable-protos/src/main/proto
 

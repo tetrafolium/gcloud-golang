@@ -17,11 +17,11 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/tetrafolium/gcloud-golang/bigtable"
 	"golang.org/x/net/context"
 	"google.golang.org/appengine"
 	aelog "google.golang.org/appengine/log"
 	"google.golang.org/appengine/user"
-	"google.golang.org/cloud/bigtable"
 )
 
 // User-provided constants.

@@ -15,7 +15,7 @@
 // Package logging contains a Google Cloud Logging client.
 //
 // This package is experimental and subject to API changes.
-package logging // import "google.golang.org/cloud/logging"
+package logging
 
 import (
 	"errors"
@@ -24,10 +24,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/tetrafolium/gcloud-golang"
+	"github.com/tetrafolium/gcloud-golang/internal/transport"
 	"golang.org/x/net/context"
 	api "google.golang.org/api/logging/v1beta3"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/internal/transport"
 )
 
 // Scope is the OAuth2 scope necessary to use Google Cloud Logging.

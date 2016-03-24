@@ -16,9 +16,9 @@ syntax = "proto3";
 
 package google.bigtable.v1;
 
-import "google.golang.org/cloud/bigtable/internal/data_proto/bigtable_data.proto";
-import "google.golang.org/cloud/bigtable/internal/service_proto/bigtable_service_messages.proto";
-import "google.golang.org/cloud/bigtable/internal/empty/empty.proto";
+import "github.com/tetrafolium/gcloud-golang/bigtable/internal/data_proto/bigtable_data.proto";
+import "github.com/tetrafolium/gcloud-golang/bigtable/internal/service_proto/bigtable_service_messages.proto";
+import "github.com/tetrafolium/gcloud-golang/bigtable/internal/empty/empty.proto";
 
 option java_generic_services = true;
 option java_multiple_files = true;

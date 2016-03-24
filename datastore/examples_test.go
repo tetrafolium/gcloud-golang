@@ -19,8 +19,8 @@ import (
 	"log"
 	"time"
 
+	"github.com/tetrafolium/gcloud-golang/datastore"
 	"golang.org/x/net/context"
-	"google.golang.org/cloud/datastore"
 )
 
 type Task struct {

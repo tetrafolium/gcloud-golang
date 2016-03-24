@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/tetrafolium/gcloud-golang"
+	"github.com/tetrafolium/gcloud-golang/bigtable/bttest"
 	"golang.org/x/net/context"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/bigtable/bttest"
 	"google.golang.org/grpc"
 )
 

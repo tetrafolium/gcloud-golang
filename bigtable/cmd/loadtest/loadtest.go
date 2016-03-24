@@ -30,9 +30,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/tetrafolium/gcloud-golang/bigtable"
+	"github.com/tetrafolium/gcloud-golang/bigtable/internal/cbtrc"
 	"golang.org/x/net/context"
-	"google.golang.org/cloud/bigtable"
-	"google.golang.org/cloud/bigtable/internal/cbtrc"
 )
 
 var (

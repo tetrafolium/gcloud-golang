@@ -18,15 +18,15 @@
 //
 // More information about Google Cloud Pub/Sub is available at
 // https://cloud.google.com/pubsub/docs
-package pubsub // import "google.golang.org/cloud/pubsub"
+package pubsub
 
 import (
 	"fmt"
 	"os"
 
+	"github.com/tetrafolium/gcloud-golang"
+	"github.com/tetrafolium/gcloud-golang/internal/transport"
 	raw "google.golang.org/api/pubsub/v1"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/internal/transport"
 
 	"golang.org/x/net/context"
 )

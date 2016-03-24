@@ -21,10 +21,10 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/tetrafolium/gcloud-golang/internal"
 	"golang.org/x/net/context"
 	"google.golang.org/api/googleapi"
 	raw "google.golang.org/api/pubsub/v1"
-	"google.golang.org/cloud/internal"
 )
 
 // batchLimit is maximun size of a single batch.

@@ -1,10 +1,10 @@
 # Google Cloud for Go
 
 [![Build Status](https://travis-ci.org/GoogleCloudPlatform/gcloud-golang.svg?branch=master)](https://travis-ci.org/GoogleCloudPlatform/gcloud-golang)
-[![GoDoc](https://godoc.org/google.golang.org/cloud?status.svg)](https://godoc.org/google.golang.org/cloud)
+[![GoDoc](https://godoc.org/github.com/tetrafolium/gcloud-golang?status.svg)](https://godoc.org/github.com/tetrafolium/gcloud-golang)
 
 ``` go
-import "google.golang.org/cloud"
+import "github.com/tetrafolium/gcloud-golang"
 ```
 
 **NOTE:** These packages are experimental, and may occasionally make
@@ -16,12 +16,12 @@ Go packages for Google Cloud Platform services. Supported APIs are:
 
 Google API                     | Status       | Package
 -------------------------------|--------------|-----------------------------------------------------------
-[Datastore][cloud-datastore]   | experimental | [`google.golang.org/cloud/datastore`][cloud-datastore-ref]
-[Cloud Storage][cloud-storage] | experimental | [`google.golang.org/cloud/storage`][cloud-storage-ref]
-[Pub/Sub][cloud-pubsub]        | experimental | [`google.golang.org/cloud/pubsub`][cloud-pubsub-ref]
-[BigTable][cloud-bigtable]     | stable       | [`google.golang.org/cloud/bigtable`][cloud-bigtable-ref]
-[BigQuery][cloud-bigquery]     | experimental | [`google.golang.org/cloud/bigquery`][cloud-bigquery-ref]
-[Logging][cloud-logging]       | experimental | [`google.golang.org/cloud/logging`][cloud-logging-ref]
+[Datastore][cloud-datastore]   | experimental | [`github.com/tetrafolium/gcloud-golang/datastore`][cloud-datastore-ref]
+[Cloud Storage][cloud-storage] | experimental | [`github.com/tetrafolium/gcloud-golang/storage`][cloud-storage-ref]
+[Pub/Sub][cloud-pubsub]        | experimental | [`github.com/tetrafolium/gcloud-golang/pubsub`][cloud-pubsub-ref]
+[BigTable][cloud-bigtable]     | stable       | [`github.com/tetrafolium/gcloud-golang/bigtable`][cloud-bigtable-ref]
+[BigQuery][cloud-bigquery]     | experimental | [`github.com/tetrafolium/gcloud-golang/bigquery`][cloud-bigquery-ref]
+[Logging][cloud-logging]       | experimental | [`github.com/tetrafolium/gcloud-golang/logging`][cloud-logging-ref]
 
 > **Experimental status**: the API is still being actively developed. As a
 > result, it might change in backward-incompatible ways and is not recommended
@@ -35,7 +35,7 @@ Google API                     | Status       | Package
 > continue addressing bugs and feature requests.
 
 Documentation and examples are available at
-https://godoc.org/google.golang.org/cloud
+https://godoc.org/github.com/tetrafolium/gcloud-golang
 
 ## Authorization
 
@@ -47,7 +47,7 @@ Manually-configured authorization can be achieved using the
 [`golang.org/x/oauth2`](https://godoc.org/golang.org/x/oauth2) package to
 create an `oauth2.TokenSource`. This token source can be passed to the `NewClient`
 function for the relevant API using a 
-[`cloud.WithTokenSource`][https://godoc.org/google.golang.org/cloud#WithTokenSource]
+[`cloud.WithTokenSource`][https://godoc.org/github.com/tetrafolium/gcloud-golang#WithTokenSource]
 option.
 
 ## Google Cloud Datastore
@@ -61,7 +61,7 @@ consistency for all other queries.
 Follow the [activation instructions][cloud-datastore-activation] to use the Google
 Cloud Datastore API with your project.
 
-https://godoc.org/google.golang.org/cloud/datastore
+https://godoc.org/github.com/tetrafolium/gcloud-golang/datastore
 
 First create a `datastore.Client` to use throughout your application:
 
@@ -99,7 +99,7 @@ if _, err := client.PutMulti(ctx, keys, posts); err != nil {
 data on Google infrastructure with very high reliability, performance and availability,
 and can be used to distribute large data objects to users via direct download.
 
-https://godoc.org/google.golang.org/cloud/storage
+https://godoc.org/github.com/tetrafolium/gcloud-golang/storage
 
 First create a `storage.Client` to use throughout your application:
 
@@ -130,7 +130,7 @@ your services with reliable, many-to-many, asynchronous messaging hosted on Goog
 infrastructure. Cloud Pub/Sub automatically scales as you need it and provides a foundation
 for building your own robust, global services.
 
-https://godoc.org/google.golang.org/cloud/pubsub
+https://godoc.org/github.com/tetrafolium/gcloud-golang/pubsub
 
 
 ```go
@@ -161,26 +161,26 @@ See [Contributor Code of Conduct](https://github.com/GoogleCloudPlatform/gcloud-
 for more information.
 
 [cloud-datastore]: https://cloud.google.com/datastore/
-[cloud-datastore-ref]: https://godoc.org/google.golang.org/cloud/datastore
+[cloud-datastore-ref]: https://godoc.org/github.com/tetrafolium/gcloud-golang/datastore
 [cloud-datastore-docs]: https://cloud.google.com/datastore/docs
 [cloud-datastore-activation]: https://cloud.google.com/datastore/docs/activate
 
 [cloud-pubsub]: https://cloud.google.com/pubsub/
-[cloud-pubsub-ref]: https://godoc.org/google.golang.org/cloud/pubsub
+[cloud-pubsub-ref]: https://godoc.org/github.com/tetrafolium/gcloud-golang/pubsub
 [cloud-pubsub-docs]: https://cloud.google.com/pubsub/docs
 
 [cloud-storage]: https://cloud.google.com/storage/
-[cloud-storage-ref]: https://godoc.org/google.golang.org/cloud/storage
+[cloud-storage-ref]: https://godoc.org/github.com/tetrafolium/gcloud-golang/storage
 [cloud-storage-docs]: https://cloud.google.com/storage/docs/overview
 [cloud-storage-create-bucket]: https://cloud.google.com/storage/docs/cloud-console#_creatingbuckets
 
 [cloud-bigtable]: https://cloud.google.com/bigtable/
-[cloud-bigtable-ref]: https://godoc.org/google.golang.org/cloud/bigtable
+[cloud-bigtable-ref]: https://godoc.org/github.com/tetrafolium/gcloud-golang/bigtable
 
 [cloud-bigquery]: https://cloud.google.com/bigquery/
-[cloud-bigquery-ref]: https://godoc.org/google.golang.org/cloud/bigquery
+[cloud-bigquery-ref]: https://godoc.org/github.com/tetrafolium/gcloud-golang/bigquery
 
 [cloud-logging]: https://cloud.google.com/logging/
-[cloud-logging-ref]: https://godoc.org/google.golang.org/cloud/logging
+[cloud-logging-ref]: https://godoc.org/github.com/tetrafolium/gcloud-golang/logging
 
 [default-creds]: https://developers.google.com/identity/protocols/application-default-credentials

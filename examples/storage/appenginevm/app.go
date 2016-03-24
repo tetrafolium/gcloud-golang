@@ -23,11 +23,11 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/tetrafolium/gcloud-golang/storage"
 	"golang.org/x/net/context"
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/file"
 	"google.golang.org/appengine/log"
-	"google.golang.org/cloud/storage"
 )
 
 // bucket is a local cache of the app's default bucket name.

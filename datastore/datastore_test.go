@@ -24,8 +24,8 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
+	pb "github.com/tetrafolium/gcloud-golang/internal/datastore"
 	"golang.org/x/net/context"
-	pb "google.golang.org/cloud/internal/datastore"
 )
 
 type (

@@ -28,10 +28,10 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
+	"github.com/tetrafolium/gcloud-golang"
+	"github.com/tetrafolium/gcloud-golang/bigtable/bttest"
+	btspb "github.com/tetrafolium/gcloud-golang/bigtable/internal/service_proto"
 	"golang.org/x/net/context"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/bigtable/bttest"
-	btspb "google.golang.org/cloud/bigtable/internal/service_proto"
 	"google.golang.org/grpc"
 )
 

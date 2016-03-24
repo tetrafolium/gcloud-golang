@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package bigtable // import "google.golang.org/cloud/bigtable"
+package bigtable
 
 import (
 	"fmt"
@@ -23,11 +23,11 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
+	"github.com/tetrafolium/gcloud-golang"
+	btdpb "github.com/tetrafolium/gcloud-golang/bigtable/internal/data_proto"
+	btspb "github.com/tetrafolium/gcloud-golang/bigtable/internal/service_proto"
+	"github.com/tetrafolium/gcloud-golang/internal/transport"
 	"golang.org/x/net/context"
-	"google.golang.org/cloud"
-	btdpb "google.golang.org/cloud/bigtable/internal/data_proto"
-	btspb "google.golang.org/cloud/bigtable/internal/service_proto"
-	"google.golang.org/cloud/internal/transport"
 	"google.golang.org/grpc"
 )
 

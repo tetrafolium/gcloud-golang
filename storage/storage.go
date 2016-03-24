@@ -15,7 +15,7 @@
 // Package storage contains a Google Cloud Storage client.
 //
 // This package is experimental and may make backwards-incompatible changes.
-package storage // import "google.golang.org/cloud/storage"
+package storage
 
 import (
 	"crypto"
@@ -36,8 +36,8 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/internal/transport"
+	"github.com/tetrafolium/gcloud-golang"
+	"github.com/tetrafolium/gcloud-golang/internal/transport"
 
 	"golang.org/x/net/context"
 	"google.golang.org/api/googleapi"
