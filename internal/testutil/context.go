@@ -20,9 +20,9 @@ import (
 	"log"
 	"os"
 
+	"github.com/tetrafolium/oauth2"
+	"github.com/tetrafolium/oauth2/google"
 	"golang.org/x/net/context"
-	"golang.org/x/oauth2"
-	"golang.org/x/oauth2/google"
 )
 
 const (

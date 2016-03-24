@@ -25,8 +25,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/tetrafolium/oauth2"
 	"golang.org/x/net/context"
-	"golang.org/x/oauth2"
 
 	"github.com/tetrafolium/gcloud-golang"
 	"github.com/tetrafolium/gcloud-golang/internal/testutil"

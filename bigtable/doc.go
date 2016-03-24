@@ -39,7 +39,7 @@ creating a new OAuth "Client ID", storing the JSON key somewhere accessible, and
 	...
 	client, err := bigtable.NewClient(ctx, project, zone, cluster, cloud.WithTokenSource(config.TokenSource(ctx)))
 	...
-Here, `google` means the golang.org/x/oauth2/google package
+Here, `google` means the github.com/tetrafolium/oauth2/google package
 and `cloud` means the github.com/tetrafolium/gcloud-golang package.
 
 Reading

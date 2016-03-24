@@ -18,7 +18,7 @@ import (
 	"net/http"
 
 	"github.com/tetrafolium/gcloud-golang/internal/opts"
-	"golang.org/x/oauth2"
+	"github.com/tetrafolium/oauth2"
 	"google.golang.org/grpc"
 )
 

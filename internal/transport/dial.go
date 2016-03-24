@@ -21,9 +21,9 @@ import (
 
 	"github.com/tetrafolium/gcloud-golang"
 	"github.com/tetrafolium/gcloud-golang/internal/opts"
+	"github.com/tetrafolium/oauth2"
+	"github.com/tetrafolium/oauth2/google"
 	"golang.org/x/net/context"
-	"golang.org/x/oauth2"
-	"golang.org/x/oauth2/google"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/credentials/oauth"

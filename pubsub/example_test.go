@@ -20,16 +20,16 @@ import (
 
 	"github.com/tetrafolium/gcloud-golang"
 	"github.com/tetrafolium/gcloud-golang/pubsub"
+	"github.com/tetrafolium/oauth2"
+	"github.com/tetrafolium/oauth2/google"
 	"golang.org/x/net/context"
-	"golang.org/x/oauth2"
-	"golang.org/x/oauth2/google"
 )
 
 func Example_auth() context.Context {
 	// Initialize an authorized context with Google Developers Console
 	// JSON key. Read the google package examples to learn more about
 	// different authorization flows you can use.
-	// http://godoc.org/golang.org/x/oauth2/google
+	// http://godoc.org/github.com/tetrafolium/oauth2/google
 	jsonKey, err := ioutil.ReadFile("/path/to/json/keyfile.json")
 	if err != nil {
 		log.Fatal(err)

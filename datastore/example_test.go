@@ -21,8 +21,8 @@ import (
 
 	"github.com/tetrafolium/gcloud-golang"
 	"github.com/tetrafolium/gcloud-golang/datastore"
+	"github.com/tetrafolium/oauth2/google"
 	"golang.org/x/net/context"
-	"golang.org/x/oauth2/google"
 )
 
 // TODO(djd): reevaluate this example given new Client config.
@@ -30,7 +30,7 @@ func Example_auth() *datastore.Client {
 	// Initialize an authorized context with Google Developers Console
 	// JSON key. Read the google package examples to learn more about
 	// different authorization flows you can use.
-	// http://godoc.org/golang.org/x/oauth2/google
+	// http://godoc.org/github.com/tetrafolium/oauth2/google
 	jsonKey, err := ioutil.ReadFile("/path/to/json/keyfile.json")
 	if err != nil {
 		log.Fatal(err)

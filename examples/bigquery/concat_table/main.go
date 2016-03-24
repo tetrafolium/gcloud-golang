@@ -24,8 +24,8 @@ import (
 	"time"
 
 	"github.com/tetrafolium/gcloud-golang/bigquery"
+	"github.com/tetrafolium/oauth2/google"
 	"golang.org/x/net/context"
-	"golang.org/x/oauth2/google"
 )
 
 var (

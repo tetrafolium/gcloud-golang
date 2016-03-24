@@ -8,7 +8,7 @@ package opts
 import (
 	"net/http"
 
-	"golang.org/x/oauth2"
+	"github.com/tetrafolium/oauth2"
 	"google.golang.org/grpc"
 )
 
